@@ -10,7 +10,9 @@
     "sequelize": "^6.13.0"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest",
+    "seeds": "node seeds/index.js"
   },
   "name": "challenge14-the-tech-blog",
   "description": "",
@@ -25,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/klmirg/Challenge14-The-Tech-Blog/issues"
   },
-  "homepage": "https://github.com/klmirg/Challenge14-The-Tech-Blog#readme"
+  "homepage": "https://github.com/klmirg/Challenge14-The-Tech-Blog#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
 }
