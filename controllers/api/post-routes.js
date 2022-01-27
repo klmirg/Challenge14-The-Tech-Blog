@@ -39,7 +39,7 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    attributes: ['id', 'blog_body', 'title', 'created_at'],
+    attributes: ['id', 'title', 'blog_body', 'user_id'],
     include: [
       {
         model: Comment,
@@ -86,7 +86,8 @@ router.post('/', withAuth, (req, res) => {
 router.put('/:id', withAuth, (req, res) => {
   Post.update(
     {
-      title: req.body.title
+      title: req.body.title,
+      blog_body: req.body.blog_body
     },
     {
       where: {

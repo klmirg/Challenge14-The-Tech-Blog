@@ -1,7 +1,16 @@
+{{!-- <article class="post">
+  <div class="title">
+    <h3>{{title}}</h3>
+    <h4>"{{blog_body}}"</h4>
+  </div>
+</article> --}}
+
 <ol class="post-list">
-  {{#each posts as |post|}}
+  {{#each posts as |post|}} 
   <li>
-    {{> post-info post }}
+    {{> post-info post }} 
   </li>
   {{/each}}
 </ol>
+
+<script src="/javascript/add-post.js"></script>

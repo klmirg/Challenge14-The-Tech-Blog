@@ -7,7 +7,7 @@
       <input type="text" id="post-title" name="post-title" />
     </div>
     <div>
-      <label for="post-blog_body">Body</label>
+      <label for="post-blog_body">Content</label>
       <input id="post-blog_body" name="post-blog_body" />
     </div>
     <button type="submit" class="btn">Create</button>
@@ -18,10 +18,10 @@
 <section>
   <h2>Your Posts</h2>
   <ol>
-    {{#each posts as |post|}}
+    {{#each posts as |post|}} 
     <li>
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit Post</a>
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit</a>
     </li>
     {{/each}}
   </ol>

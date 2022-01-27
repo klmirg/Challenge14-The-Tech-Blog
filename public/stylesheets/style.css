@@ -11,32 +11,46 @@
   --dark: #201110;
 }
 
-* {
+/* * {
  color: black;
  margin: 0px;
  font-size: 18px;
-
-}
+} */
 
 body {
+  background-color: var(--primary);
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color: var(--dark);
+  font-size: 25px;
+}
+/* body {
   background-color: var(--tertiary);
   text-align: left;
-}
+} */
 
-header {
+/* header {
   text-align: center;
   background-color: var(--secondary);
-  /* margin: 50px; */
+  margin: 50px;
   padding-top: 25px;
   padding-bottom: 25px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+} */
+
 
 header h1 {
   margin-bottom: 50px;
   font-size: 36px;
 }
 
+.hero {
+  padding: 3% 4%;
+  background-color: var(--dark);
+  color: var(--primary);
+}
+/* 
 button {
   background-color: var(--primary);
   color: white;
@@ -46,11 +60,19 @@ button {
   padding-right: 15px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-size: 18px;
-}
+} */
 
-button a {
-  color: white;
-  font-size: 18px;
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--secondary);
+  font-size: 100%;
+  font-weight: normal;
+  transition: color 0.1s;
+  margin-left: 16px;
 }
 
 main {
