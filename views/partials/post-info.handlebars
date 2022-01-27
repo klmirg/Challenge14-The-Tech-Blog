@@ -1,5 +1,18 @@
 <article class="post">
       <div class="title">
+        {{!-- <a href="{{post_url}}" target="_blank">{{title}}</a>
+        <span>({{format_url post_url}})</span> --}}
+      </div>
+      <div class="meta">
+        <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}} by {{user.username}} on
+        {{format_date created_at}}
+        </a>
+      </div>
+    </article>
+
+
+    {{!-- <article class="post">
+      <div class="title">
         <a href="{{post_url}}" target="_blank">{{title}}</a>
         <span>({{format_url post_url}})</span>
       </div>
@@ -8,4 +21,4 @@
         {{format_date created_at}}
         |</a>
       </div>
-    </article>
+    </article> --}}

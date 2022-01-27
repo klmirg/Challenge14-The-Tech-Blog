@@ -1,4 +1,8 @@
 {
+  "name": "challenge14-the-tech-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.2",
@@ -9,15 +13,11 @@
     "mysql2": "^2.3.3",
     "sequelize": "^6.13.0"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "node server.js",
-    "test": "jest",
-    "seeds": "node seeds/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "name": "challenge14-the-tech-blog",
-  "description": "",
-  "version": "1.0.0",
-  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/klmirg/Challenge14-The-Tech-Blog.git"
@@ -27,8 +27,5 @@
   "bugs": {
     "url": "https://github.com/klmirg/Challenge14-The-Tech-Blog/issues"
   },
-  "homepage": "https://github.com/klmirg/Challenge14-The-Tech-Blog#readme",
-  "devDependencies": {
-    "jest": "^27.4.7"
-  }
+  "homepage": "https://github.com/klmirg/Challenge14-The-Tech-Blog#readme"
 }
