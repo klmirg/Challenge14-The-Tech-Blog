@@ -5,33 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Tech Blog</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
   <div class="wrapper">
      <header class="hero">
-    <h1>
-      The Tech Blog
-    </h1>
     <nav>
-       {{#if loggedIn}}
         <a href="/" class="btn-no-style">Home</a>
+       {{#if loggedIn}}
         <a href="/dashboard" class="btn-no-style">Dashboard</a>
-        <button id="logout" class="btn-no-style"><a href="/">Logout</button></a>
+        <button id="logout" class="btn-no-style">Logout</button>
         {{else}}
         <a href="/login" class="btn-no-style">LogIn</a>
         <a href="/signup" class="btn-no-style">SignUp</a>
         {{/if}}
     </nav>
+    <h1>
+      The Tech Blog
+    </h1>
   </header>
     <main>
       {{{ body }}}
     </main>
     <footer>
-      Thanks for visiting!
+     
     </footer>
   </div>
 

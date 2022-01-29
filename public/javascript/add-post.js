@@ -16,10 +16,9 @@ async function newFormHandler(event) {
   });
 
   if (response.ok) {
-    document.location.replace('/dashboard');
+    document.location.replace('/add-post');
   } else {
     alert(response.statusText);
   }
 }
-
 document.querySelector('.new-post-form').addEventListener('submit', newFormHandler);

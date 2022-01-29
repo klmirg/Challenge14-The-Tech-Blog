@@ -11,11 +11,11 @@
   --dark: #201110;
 }
 
-/* * {
+* {
  color: black;
  margin: 0px;
  font-size: 18px;
-} */
+}
 
 body {
   background-color: var(--primary);
@@ -38,7 +38,9 @@ body {
   padding-bottom: 25px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 } */
-
+nav {
+  text-align: right;
+}
 
 header h1 {
   margin-bottom: 50px;
@@ -50,17 +52,17 @@ header h1 {
   background-color: var(--dark);
   color: var(--primary);
 }
-/* 
+
 button {
-  background-color: var(--primary);
-  color: white;
+  background-color: var(--light-dark);
+  color: var(--tertiary);
   border-radius: 5px;
   padding: 5px;
   padding-left: 15px;
   padding-right: 15px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-size: 18px;
-} */
+}
 
 .btn-no-style {
   background: none;
@@ -78,10 +80,40 @@ button {
 main {
   padding: 50px;
   line-height: 2.5;
- 
 }
 
 a {
   text-decoration: none;
+  color: var(--secondary);
 }
 
+ol {
+  list-style: none;
+}
+
+input, textarea {
+  padding: 0.5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-width: 40%;
+  
+}
+/* #logout {
+  text-decoration: none;
+  color: var(--secondary);
+} */
+
+.btn-no-style:hover
+ {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.new-post-form {
+  border: var(--dark), thick;
+}
