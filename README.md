@@ -42,7 +42,7 @@ It is open to the public, so feel free to use it if you'd like.
  
  ## Website
  
- ## Image of Website
+ ## Image
 
  ## Contributions
 
