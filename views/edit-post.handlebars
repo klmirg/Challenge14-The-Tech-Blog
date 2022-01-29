@@ -1,64 +1,26 @@
 <article>
   <a href="/dashboard" class=""> &larr; Back to Dashboard</a>
-  <h2>
+  <h2 class="edit">
     Edit Post
   </h2>
   <form class="edit-post-form">
-    <div>
-      <label for="post-title">Title</label>
+    <div class="space">
+      <label for="post-title" class="title">Title</label>
       <input name="post-title" type="text" value="{{post.title}}" />
     </div>
-  {{!-- <form class="comment-form"> --}}
-    <div>
+    <div class="space">
       <label for="post-blog_body">Content</label>
       <input id="post-blog_body" name="post-blog_body" />
     </div>
-  {{!-- </form> --}}
-    <button type="submit" class="update-post-btn">Update</button>
-    <button type="button" class="delete-post-btn">Delete</button>
+    <div class="edit-btns">
+      <button type="submit" class="update-post-btn">Update</button>
+      <button type="button" class="delete-post-btn">Delete</button>
+    </div>
   </form>
 </article>
-
-    {{!-- <div>
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}} by you on {{format_date post.created_at}}|</a>
-    </div> --}}
-  {{!-- <div>
-    <button type="submit">Add Comment</button>
-  </div> --}}
-
-{{!-- {{> comments post.comments}} --}}
 
 {{#if loggedIn}}
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>
 <script src="/javascript/comment.js"></script>
 {{/if}}
-
-
-{{!-- <article>
-  <a href="/dashboard"> &larr; Back to dashboard</a>
-  <h2>
-    Edit Post
-  </h2>
-  <form class="edit-post-form">
-    <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-      <span>({{format_url post.post_url}})</span>
-    </div>
-    <div>
-      <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}} by you on {{format_date post.created_at}}|</a>
-    </div>
-    <button type="submit">Save post</button>
-    <button type="button" class="delete-post-btn">Delete post</button>
-  </form>
-</article>
-
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">add comment</button>
-  </div>
-</form> --}}

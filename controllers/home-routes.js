@@ -87,17 +87,21 @@ router.get('/post/:id', (req, res) => {
       });
     });
     
-    router.get('/signup', (req, res) => {
-      res.render('signup');
-    });
+  router.get('/signup', (req, res) => {
+    res.render('signup');
+  });
 
-    router.get('/login', (req, res) => {
-      if (req.session.loggedIn) {
-        res.redirect('/');
-        return;
-      }
+  router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+      res.redirect('/');
+      return;
+    }
     
-      res.render('login');
-    });
+    res.render('login');
+  });
+
+  router.get('/add-post', (req, res) => {
+    res.render('add-post');
+  })
 
 module.exports = router;
