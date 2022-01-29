@@ -14,7 +14,7 @@ This is a CMS style blog site where you can post content, edit it, delete it, an
 
 * [Website](#website)
 
-* [Image of Website](#image of website)
+* [Image](#image)
 
 * [Contributions](#contributions)
 
