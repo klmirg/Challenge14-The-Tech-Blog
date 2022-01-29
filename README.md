@@ -43,7 +43,8 @@ It is open to the public, so feel free to use it if you'd like.
  ## Website
  
  ## Image
-![](/public/assets/images/.png)
+![](/public/assets/images/finalScreenShot.png)
+
  ## Contributions
 
  Ronya Gettis
