@@ -21,15 +21,6 @@ body {
   font-size: 25px;
 }
 
-
-/* header {
-  text-align: center;
-  background-color: var(--secondary);
-  margin: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-} */
 nav {
   text-align: right;
 }
