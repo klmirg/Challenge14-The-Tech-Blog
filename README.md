@@ -42,6 +42,8 @@ It is open to the public, so feel free to use it if you'd like.
  
  ## Website
  
+ https://my-tech-blog22.herokuapp.com/
+ 
  ## Image
 ![](/public/assets/images/finalScreenShot.png)
 
